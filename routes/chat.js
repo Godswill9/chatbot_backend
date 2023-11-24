@@ -9,7 +9,7 @@ route.post("/chat", async (req, res) => {
     var url = "https://api.openai.com/v1/chat/completions";
     var api_key = process.env.API_KEY;
 
-    conversation.push({
+    conversation.push({ 
       role: "user",
       content: `always reply very simply as a mechanic and in not more than 30 words. ${req.body.message}`,
     });
